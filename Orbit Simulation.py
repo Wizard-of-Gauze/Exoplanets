@@ -95,7 +95,7 @@ def main():
     clock = pygame.time.Clock()
     
     sun = Planet('Sun', np.array([0, 0]), np.array([0, 0]), 1.98892 * 10**30, yellow, 30)
-    asteroid = Planet('Asteroid', np.array([-0.5*AU, 0]), np.array([0, 5000]), 1.98892 * 10**30, brown, 8)
+    #asteroid = Planet('Asteroid', np.array([-0.5*AU, 0]), np.array([0, 5000]), 1 * 10**18, brown, 8)
     mercury = Planet('Mercury', np.array([-0.4*AU, 0]), np.array([0, 47360]), 3.285 * 10**23, dark_grey, 10)
     venus = Planet('Venus', np.array([-0.72*AU, 0]), np.array([0, 35020]), 4.867 * 10**24, white, 15)
     earth = Planet('Earth', np.array([-1*AU,0]), np.array([0, 29783]), 5.9742 * 10**24, dark_blue, 15)
@@ -105,7 +105,7 @@ def main():
     #uranus = Planet('Uranus', np.array([19.8*AU, 0]), np.array([0, 6790]), 8.681 * 10**25, blue)
     #neptune = Planet('Neptune', np.array([30.1*AU, 0]), np.array([0, 5450]), 1.024 * 10**26, dark_blue)
     
-    planets = [sun, asteroid, mercury, venus, earth, mars]
+    planets = [sun, mercury, venus, earth, mars]
     
     while run:
         clock.tick(60)
