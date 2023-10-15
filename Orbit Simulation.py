@@ -7,7 +7,7 @@ win = pygame.display.set_mode((width, height))
 pygame.display.set_caption('Transit Simulation')
 
 AU = 1.495978707e11
-dt = 86400
+dt = 43200
 
 yellow = (255, 255, 0)
 dark_grey = (80, 78, 81)
